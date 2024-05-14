@@ -1,0 +1,642 @@
+/* ==UserStyle==
+@name           Sleek Edgenuity
+@namespace      https://github.com/NathanaelLip/Sleek-Edgenuity/
+@author         NathanaelLip
+@description    `Made to make Edgenuity look more modern and stop hurting my eyes.`
+@version        1.1
+@license        CC BY-NC-SA
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("r22.core.learn.edgenuity.com") {
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    html {
+        overflow: hidden;
+        background-color: #2c2c2c;
+    }
+
+    html,
+    body,
+    input,
+    span {
+        font-family: 'Ubuntu', sans-serif;
+        /* font-family: sans-serif; */
+    }
+
+    body {
+        background-color: #2c2c2c;
+    }
+
+    body > p {
+        color: white;
+    }
+
+    .mainhead {
+        background: transparent;
+        border: none;
+        color: white !important;
+        box-shadow: none;
+        display: flex;
+    }
+
+    .mainhead .course {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .mainhead a {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .mainhead .head-nav {
+        top: auto;
+    }
+
+    .mainfoot {
+        background: transparent;
+        box-shadow: none;
+        border: none;
+    }
+
+    .mainfoot a.goLeft .nav-icon,
+    .mainfoot a.goRight .nav-icon {
+        display: inline-block;
+        border: 1.5px solid #5f5f5f;
+        width: 26px;
+        height: 26px;
+        position: relative;
+        top: 8px;
+        border-radius: 0.5rem;
+        box-shadow: none;
+    }
+
+    .mainfoot a {
+        font-size: 13px;
+    }
+
+    .toolbar > li {
+        display: block;
+        position: relative;
+        border-top: 1px solid #454545;
+        border-bottom: 1px solid #151515;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .toolbar > li > button {
+        border-radius: 10px 0px 0px 10px;
+        color: rgb(252, 252, 252) !important;
+        font-size: 0.75rem;
+    }
+
+    .toolbar > li > li > button {
+        border-radius: 10px 0px 0px 10px;
+        color: rgb(252, 252, 252) !important;
+        font-size: 0.75rem;
+    }
+
+    .tools-highlight1:hover {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .toolbar > li {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .tools-calc1:hover,
+    .tools-fly-active:hover,
+    .tools-res2:hover,
+    .tools-res3:hover,
+    .tools-calc4:hover,
+    .tools-calc2:hover,
+    .tools-calc5:hover,
+    .tools-calc3:hover,
+    .tools-highlight1:hover,
+    .tools-fly-inactive:hover,
+    .tools-res4:hover,
+    .tools-res1:hover,
+    .tools-headphones1:hover,
+    .tools-chat:hover {
+        background-color: #272727;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .toolbar > li > ul > li:hover:first-child:not(.highlighter,
+    .audio) {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .tools-res2,
+    .tools-PeriodicTable {
+        border-radius: 10px 0px 0 10px;
+    }
+
+    .alignleft {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #frameArea {
+        border-radius: 0.5rem;
+    }
+
+    #frameArea > iframe {
+        border-radius: 0.5rem;
+    }
+
+    #frameArea > div {
+        border-radius: 0.5rem;
+    }
+
+    #frameAudioControls {
+        border-radius: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .toolbar {
+        left: -55px;
+        top: 15px;
+    }
+
+    #consoleedit {
+        overflow-y: scroll;
+        height: 4rem;
+    }
+
+    .vcplayer {
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+    }
+
+    .vcplayer .controls {
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+        border: none;
+        background: #2b2b2beb;
+    }
+
+    #frame_video_controls {
+        margin-top: -45px;
+    }
+
+    .Toolbar .FramesList li.FrameLeft a,
+    .Toolbar .FramesList li.FrameRight a {
+        box-shadow: none;
+        border-radius: 0.5rem;
+        border: 1.5px solid #646464
+    }
+
+    .Toolbar .FramesList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Toolbar .FramesList li a {
+        border-radius: 0.35rem;
+    }
+
+    .Toolbar .FramesList li {
+        width: 18px;
+        height: 18px;
+    }
+
+    .Toolbar .FramesList li.FrameLeft,
+    .Toolbar .FramesList li.FrameRight {
+        width: 22px;
+        height: 22px;
+        position: relative;
+        top: 0px;
+    }
+
+    .Toolbar .FramesList li.FrameComplete a {
+        border: 1px solid #f78d4c;
+        border-width: 2px;
+    }
+
+    .Toolbar .FramesList li.FrameCurrent a {
+        background: #f78d4c;
+        background-color: #f78d4c;
+        border-width: 2px;
+    }
+
+    .uibtn {
+        color: #686868;
+        border: 2px solid #8d8e8f;
+        box-shadow: none;
+        text-transform: uppercase;
+        line-height: 25px;
+        border-radius: 0.5rem;
+    }
+
+    .uibtn.uibtn-icon:hover {
+        color: #646464;
+        border: 2px solid #777778;
+        box-shadow: none;
+        text-transform: uppercase;
+        line-height: 25px;
+        border-radius: 0.5rem;
+    }
+
+    .lesson-pane-trigger {
+        box-shadow: none;
+        border: 2px solid #646464;
+    }
+
+    .Played {
+        background: #f78d4c;
+    }
+
+    .Scrubber {
+        width: 1.5rem;
+        height: 1.5rem;
+        translate: 0px 9px;
+        border-radius: 1rem;
+        background: white;
+        outline: 4px #f78d4c solid;
+        outline-offset: -10000px;
+    }
+
+    .ui-dialog .ui-dialog-titlebar-close {
+        background-position: -141px -108px;
+        border: 0px;
+    }
+
+    .ui-dialog .ui-dialog-titlebar-close span {
+        display: none;
+    }
+
+    :focus-visible {
+        outline: 0px;
+    }
+
+    #enotes {
+        color: white;
+    }
+
+    body .lesson-pane .ui-tabs.uitabs .ui-tabs-nav {
+        background-color: #2c2c2c;
+    }
+
+
+    #advancedIcon {
+        background-color: #2c2c2c;
+        height: 30px;
+    }
+
+    .notepad-inner .notepad-note {
+        color: white;
+    }
+
+    #notepad-header {
+        color: white;
+        height: 18px;
+        background-color: #323232;
+    }
+
+    .notepad-form-label {
+        color: white;
+    }
+
+    .cke_chrome {
+        border: 2px solid #323232;
+    }
+
+    .cke_top {
+        border-bottom: 1px solid #292929;
+        padding: 6px 8px 2px;
+        white-space: normal;
+        box-shadow: 0 1px 0 #fff inset;
+        background: #cfd1cf;
+        background-image: linear-gradient(to bottom, #3b3b3b, #2c2c2c);
+    }
+
+    .cke_bottom {
+        color: white;
+        border-top: 1px solid #292929;
+        border-bottom: 1px solid #292929;
+        padding: 6px 8px 2px;
+        white-space: normal;
+        box-shadow: 0 1px 0 #fff inset;
+        background: #cfd1cf;
+        background-image: linear-gradient(to bottom, #3b3b3b, #2c2c2c);
+    }
+
+    a.cke_path_item,
+    span.cke_path_empty {
+        display: inline-block;
+        padding: 3px 4px;
+        margin-right: 2px;
+        cursor: default;
+        text-decoration: none;
+        outline: 0;
+        border: 0;
+        font-weight: bold;
+        font-size: 11px;
+        color: white;
+    }
+
+    .glossary-word-list {
+        color: white;
+    }
+
+    #eNotesReadOnlyPanel {
+        background: #2c2c2c;
+    }
+
+    #notepad-title {
+        background: #2c2c2c;
+    }
+
+    .notepad-form {
+        background: #2c2c2c;
+    }
+
+    .noNotesMessage {
+        background: #2c2c2c;
+    }
+
+    .vocabWords {
+        color: white;
+    }
+
+    .notepad-form-advanced {
+        background: #2c2c2c;
+        color: #fff;
+    }
+
+    .ui-widget-content a {
+        color: white;
+    }
+
+    .tab-inner {
+        background: #2c2c2c;
+    }
+
+    body .lesson-pane .ui-tabs.uitabs .ui-tabs-panel {
+        background: #2c2c2c;
+    }
+
+    .av-container {
+        background-color: #2c2c2c;
+    }
+
+    a.plainbtn.alt.icon,
+    button.plainbtn.alt.icon,
+    .plainbtn.alt.icon {
+        border-radius: 0.5rem;
+    }
+
+    .transcript-section {
+        color: white;
+    }
+
+    .transcript-time {
+        color: white;
+    }
+
+    .transcript-text {
+        color: white;
+    }
+
+    .transcript-no-content {
+        color: white;
+    }
+
+    body .lesson-pane .ui-tabs.uitabs .ui-tabs-nav li {
+        background: #3b3b3b;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+        border-radius: 0.5rem;
+    }
+
+    body .lesson-pane .ui-tabs.uitabs {
+        border-left: 1px solid #393939;
+    }
+
+    .uitabs .ui-tabs-nav .ui-state-default a,
+    .uitabs .ui-tabs-nav .ui-state-default a,
+    .uitabs .ui-tabs-nav .ui-state-default a {
+        color: white;
+        transition: auto;
+    }
+
+    .uitabs .ui-tabs-nav .ui-state-active a {
+        color: #6cd6ff;
+        transition: auto;
+    }
+
+    .uitabs .ui-tabs-nav .ui-state-default a:hover,
+    .uitabs .ui-tabs-nav .ui-state-default a:hover,
+    .uitabs .ui-tabs-nav .ui-state-default a:hover {
+        color: #b0b0b0;
+        transition: auto;
+    }
+
+    .ui-tabs-anchor {
+        box-shadow: none;
+        transition: auto;
+    }
+
+    .uitabs .ui-tabs-nav .ui-state-default:before,
+    .uitabs .ui-tabs-nav .ui-state-default:before,
+    .uitabs .ui-tabs-nav .ui-state-default:before {
+        display: none;
+    }
+
+    .uitabs .ui-tabs-nav .ui-state-default:after,
+    .uitabs .ui-tabs-nav .ui-state-default:after,
+    .uitabs .ui-tabs-nav .ui-state-default:after {
+        display: none;
+    }
+
+    .uitabs .ui-tabs-nav.ui-corner-all,
+    .uitabs .ui-tabs-nav.ui-corner-all,
+    .uitabs .ui-tabs-nav.ui-corner-all {
+        border: none;
+    }
+
+    .mainfoot a[disabled],
+    .mainfoot a.disabled,
+    .mainfoot a[disabled]:hover,
+    .mainfoot a.disabled:hover {
+        color: #8d8d8d;
+    }
+
+    #edgesploitMenuButton {
+        opacity: 0.2;
+    }
+
+    .nav-container {
+        background-color: #2c2c2c;
+    }
+
+    .gradebar-wrap .gradebar {
+        border-radius: 10px;
+    }
+
+    .data-container {
+        border-radius: 1rem 1rem 0 0
+    }
+
+    .bottom-tray.gradient-Divider {
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    a.plainbtn,
+    button.plainbtn,
+    .plainbtn {
+        border-radius: 0.5rem;
+    }
+
+    .overlay-background {
+        border-radius: 1rem;
+    }
+}
+
+@-moz-document domain("student.edgenuity.com") {
+
+    html {
+        background: #272727;
+    }
+
+    body {
+        background-color: #272727;
+    }
+
+    .spinner-wrapper {
+        background: #272727;
+    }
+
+    #root {
+        background: #272727;
+    }
+
+    .home-page-background {
+        background-color: #272727;
+    }
+
+    .navbar.edgenuity {
+        background-color: #212121;
+        border-bottom: 2px #333333 solid;
+        /*         box-shadow: #333333 0px 0px 20px 4px; */
+    }
+
+    .navbar-brand .edgenuity-logo {
+        width: 170px;
+        color: white;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        margin: 0.5rem;
+    }
+
+    svg.svelte-1v5anx0 {
+        fill: white;
+    }
+
+    .header-icon {
+        color: white;
+    }
+
+    .profile-button {
+        background: #00007c;
+    }
+
+    .sle-card.card {
+        background-color: #343434;
+    }
+
+    .card-subject {
+        color: #fff;
+    }
+
+    .card-title {
+        color: #fff;
+    }
+
+    .course-grade {
+        color: #fff
+    }
+
+    .footer a:link,
+    .footer a:visited {
+        color: #ffffff!important;
+    }
+
+    #edgesploitMenuButton {
+        opacity: 0.2;
+    }
+
+    .unit-list a {
+        color: #e8e8e8;
+    }
+
+    .lesson-list a.active {
+        color: #7f8eff;
+    }
+
+    .ActivityTile.card {
+        background: #343434;
+    }
+
+    .ActivityTile-border-default {
+        border: 2px solid #2c2c2c;
+    }
+
+    .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: #484848!important;
+    }
+
+    .card-body {
+        color: white;
+    }
+
+    .ActivityTile .card-footer {
+        color: #fff
+    }
+
+    .page-title {
+        background-color: #272727;
+        color: #fff;
+        border-bottom: 1px solid #2b2b2b;
+    }
+
+    .sidebar {
+        background-color: #272727;
+        border-right: 1px solid #2b2b2b;
+    }
+
+    .ActivityTile .card-body:after {
+        background: #2e2e2e;
+    }
+
+    .lesson-document-link {
+        color: #ffffff;
+    }
+
+    .progress-label {
+        color: #c8c8c8;
+    }
+
+    .enotes-content {
+        color: #ffffff;
+    }
+
+    .courses .unit-list a {
+        color: #c8c8c8!important;
+    }
+
+    body {
+        --bs-body-color: #d3d3d3;
+    }
+}
+
+@-moz-document domain("media.edgenuity.com") {
+    html {
+        overflow: hidden;
+    }
+
+    .title-bar {
+        border-radius: 0.5rem;
+    }
+}
